@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-07-04T22:02:28Z" name="Default suite" finished-at="2019-07-04T22:03:07Z" duration-ms="39107">
+    <groups>
+    </groups>
+    <test started-at="2019-07-04T22:02:28Z" name="Default test" finished-at="2019-07-04T22:03:07Z" duration-ms="39107">
+      <class name="com.smartsheet.qa.testcases.SheetPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.smartsheet.qa.testcases.SheetPageTest@55a561cf]" started-at="2019-07-04T22:02:28Z" name="setUp" finished-at="2019-07-04T22:02:34Z" duration-ms="5660" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addcolumnTest()[pri:1, instance:com.smartsheet.qa.testcases.SheetPageTest@55a561cf]" started-at="2019-07-04T22:02:34Z" name="addcolumnTest" finished-at="2019-07-04T22:02:46Z" duration-ms="12454" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addcolumnTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.smartsheet.qa.testcases.SheetPageTest@55a561cf]" started-at="2019-07-04T22:02:46Z" name="tearDown" finished-at="2019-07-04T22:02:50Z" duration-ms="3755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.smartsheet.qa.testcases.SheetPageTest@55a561cf]" started-at="2019-07-04T22:02:50Z" name="setUp" finished-at="2019-07-04T22:02:55Z" duration-ms="4991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="removecolumnTest()[pri:2, instance:com.smartsheet.qa.testcases.SheetPageTest@55a561cf]" started-at="2019-07-04T22:02:55Z" name="removecolumnTest" finished-at="2019-07-04T22:03:04Z" duration-ms="8447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removecolumnTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.smartsheet.qa.testcases.SheetPageTest@55a561cf]" started-at="2019-07-04T22:03:04Z" name="tearDown" finished-at="2019-07-04T22:03:07Z" duration-ms="3760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.smartsheet.qa.testcases.SheetPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
