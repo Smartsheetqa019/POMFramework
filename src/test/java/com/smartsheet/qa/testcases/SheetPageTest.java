@@ -8,12 +8,12 @@ import com.smartsheet.qa.base.TestBase;
 import com.smartsheet.qa.pages.LoginPage;
 import com.smartsheet.qa.pages.SheetPage;
 
-public class SheetPageTest extends TestBase {
+public class SheetPageTest extends TestBase {	//Inherit common properties from TestBase class
 	LoginPage loginPage;
 	SheetPage sheetPage;
 	
 	public SheetPageTest(){
-		super(); //Super class constructor will be called
+		super(); //Call Super class constructor
 	}
 	
 	@BeforeMethod
@@ -23,11 +23,13 @@ public class SheetPageTest extends TestBase {
 		sheetPage = loginPage.login(prop.getProperty("loginEmail"), prop.getProperty("loginPassword"));
 	}
 	
+	//Validate Adding Text/Number Column in a sheet
 	@Test(priority=1)
 	public void addcolumnTest() throws InterruptedException{
 		sheetPage.addColumn(prop.getProperty("columnheading"));	
 	}
 	
+	//Validate Remove Text/Number Column test case
 	@Test(priority=2)
 	public void removecolumnTest() throws InterruptedException {
 		sheetPage.deleteColumn();
