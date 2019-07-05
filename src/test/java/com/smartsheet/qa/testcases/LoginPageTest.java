@@ -13,7 +13,7 @@ public class LoginPageTest extends TestBase{	//Inherit common properties from Te
 	SheetPage sheetPage;
 	
 	public LoginPageTest(){
-		super(); //Call super class constructor
+		super(); //Call Parent class constructor
 	}
 	
 	@BeforeMethod
@@ -22,7 +22,7 @@ public class LoginPageTest extends TestBase{	//Inherit common properties from Te
 		loginPage = new LoginPage();
 	}
 	
-	//Login Test Case
+	//Validate Login successful
 	@Test(priority=1)
 	public void loginTest() {
 		sheetPage = loginPage.login(prop.getProperty("loginEmail"), prop.getProperty("loginPassword"));
