@@ -8,12 +8,12 @@ import com.smartsheet.qa.base.TestBase;
 import com.smartsheet.qa.pages.LoginPage;
 import com.smartsheet.qa.pages.SheetPage;
 
-public class LoginPageTest extends TestBase{
+public class LoginPageTest extends TestBase{	//Inherit common properties from TestBase class
 	LoginPage loginPage;
 	SheetPage sheetPage;
 	
 	public LoginPageTest(){
-		super(); //Super class constructor will be called
+		super(); //Call super class constructor
 	}
 	
 	@BeforeMethod
@@ -22,6 +22,7 @@ public class LoginPageTest extends TestBase{
 		loginPage = new LoginPage();
 	}
 	
+	//Login Test Case
 	@Test(priority=1)
 	public void loginTest() {
 		sheetPage = loginPage.login(prop.getProperty("loginEmail"), prop.getProperty("loginPassword"));
