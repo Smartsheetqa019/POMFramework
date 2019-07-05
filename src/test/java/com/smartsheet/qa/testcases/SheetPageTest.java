@@ -13,7 +13,7 @@ public class SheetPageTest extends TestBase {	//Inherit common properties from T
 	SheetPage sheetPage;
 	
 	public SheetPageTest(){
-		super(); //Call Super class constructor
+		super(); //Call Parent class constructor
 	}
 	
 	@BeforeMethod
