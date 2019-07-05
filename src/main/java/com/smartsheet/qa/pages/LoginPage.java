@@ -6,6 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.smartsheet.qa.base.TestBase;
 
+//Inherit common properties from TestBase class
 public class LoginPage extends TestBase {
 	
 	//PageFactory - Object Repository:
