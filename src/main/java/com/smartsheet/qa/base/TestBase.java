@@ -39,8 +39,7 @@ public class TestBase {
 		//Read browser
 		String browserName = prop.getProperty("browser");
 		if(browserName.equals("chrome")) {
-			FileInputStream ipone = new FileInputStream(System.getProperty("user.dir") + "/src/main/java/com/smartsheet/qa/config/chromedriver.exe");
-			propone.load(ipone);
+			System.setProperty("webdriver.chrome.driver",  "C:\\Users\\kolli\\eclipse-workspace\\libs\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 		
