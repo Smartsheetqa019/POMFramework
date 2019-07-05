@@ -6,9 +6,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.smartsheet.qa.base.TestBase;
 
-//Inherit common properties from TestBase class
+
 //Objective of this calss is to identify elements on login page and perform required actions
-public class LoginPage extends TestBase {
+public class LoginPage extends TestBase {	//Inherit common properties from TestBase class
 	
 	//PageFactory - Object Repository:
 	@FindBy(name="loginEmail")
