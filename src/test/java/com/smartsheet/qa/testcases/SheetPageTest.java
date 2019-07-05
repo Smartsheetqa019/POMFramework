@@ -23,13 +23,13 @@ public class SheetPageTest extends TestBase {	//Inherit common properties from T
 		sheetPage = loginPage.login(prop.getProperty("loginEmail"), prop.getProperty("loginPassword"));
 	}
 	
-	//Validate Adding Text/Number Column in a sheet
+	//Validate Adding Text/Number Column in a sheet is successful
 	@Test(priority=1)
 	public void addcolumnTest() throws InterruptedException{
 		sheetPage.addColumn(prop.getProperty("columnheading"));	
 	}
 	
-	//Validate Remove Text/Number Column test case
+	//Validate Remove Text/Number Column in a sheet is successful
 	@Test(priority=2)
 	public void removecolumnTest() throws InterruptedException {
 		sheetPage.deleteColumn();
