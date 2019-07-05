@@ -39,7 +39,7 @@ public class TestBase {
 		//Read browser
 		String browserName = prop.getProperty("browser");
 		if(browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver",  "https://github.com/Smartsheetqa019/POMFramework/blob/master/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver",  "user.dir");
 			driver = new ChromeDriver();
 		}
 		
