@@ -39,12 +39,8 @@ public class TestBase {
 		//Read browser
 		String browserName = prop.getProperty("browser");
 		if(browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver",  "C:\\Users\\kolli\\eclipse-workspace\\libs\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver",  "https://github.com/Smartsheetqa019/POMFramework/blob/master/chromedriver.exe");
 			driver = new ChromeDriver();
-		}
-		else if(browserName.equals("FF")) {
-			System.setProperty("webdriver.chrome.driver",  "C:\\Users\\kolli\\eclipse-workspace\\libs\\geckodriver.exe");
-			driver = new FirefoxDriver();
 		}
 		
 		driver.manage().window().maximize();
