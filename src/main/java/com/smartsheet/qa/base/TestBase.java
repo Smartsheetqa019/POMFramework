@@ -40,6 +40,7 @@ public class TestBase {
 		//Invoke Browser
 		String browserName = prop.getProperty("browser");
 		if(browserName.equals("chrome")) {
+			//Replace path with local path where you placed chromedriver
 			System.setProperty("webdriver.chrome.driver",  "C:\\Users\\kolli\\eclipse-workspace\\libs\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
