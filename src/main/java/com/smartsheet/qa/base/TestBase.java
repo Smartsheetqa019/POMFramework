@@ -12,6 +12,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.smartsheet.qa.util.TestUtil;
 
+//Objectiev of this class is to access and perform common properties defined in config.properties applicable to all Pages
 public class TestBase {
 	
 	public static WebDriver driver; //Initialize driver variable
@@ -20,7 +21,7 @@ public class TestBase {
 	//Constructor
 	public TestBase() {
 		
-		//Read Properties
+		//Read common Properties defined in config.properties files
 		try {
 			prop = new Properties(); //Initialize prop variable
 			FileInputStream ip = new FileInputStream(System.getProperty("user.dir") + "/src/main/java/com/smartsheet/qa/config/config.properties");
@@ -36,18 +37,20 @@ public class TestBase {
 	//Initialization Method
 	public static void initialization() {
 		
-		//Read browser
+		//Invoke Browser
 		String browserName = prop.getProperty("browser");
 		if(browserName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver",  "C:\\Users\\kolli\\eclipse-workspace\\libs\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 		
+		//Perform common Browser actions
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		
+		//Get URL from config.properties
 		driver.get(prop.getProperty("url"));
 		
 		
