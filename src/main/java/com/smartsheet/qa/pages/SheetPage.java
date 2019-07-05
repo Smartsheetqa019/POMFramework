@@ -7,8 +7,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.smartsheet.qa.base.TestBase;
 
-public class SheetPage extends TestBase {
+//Objective of this calss is to identify elements on SmartSheet page and perform required actions
+public class SheetPage extends TestBase {	//Inherit common properties from TestBase class
 	
+	//PageFactory - Object Repository:
 	@FindBy(xpath="//div[text()='Primary Column']")
 	WebElement column;
 	
@@ -27,11 +29,12 @@ public class SheetPage extends TestBase {
 	@FindBy(xpath="//td[text()='Delete Column']")
 	WebElement removecolumn;
 	
-	
+	//Initializing the Page Objects:
 	public SheetPage() {
 		PageFactory.initElements(driver, this);
 	}
 	
+	//Actions:
 	public void addColumn(String colname) throws InterruptedException{
 		column.click();
 		Actions action = new Actions(driver);
